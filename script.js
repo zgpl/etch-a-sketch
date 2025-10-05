@@ -4,7 +4,10 @@ for (let i = 0; i < 256; i++) {
     const square = document.createElement ("div");
     square.classList.add("square");
     square.addEventListener("mouseover", event => {
-        event.target.style.background = "mediumAquamarine";
+        const firstColor = Math.floor (Math.random()* 256);
+        const secondColor = Math.floor (Math.random()* 256);
+        const thirdColor = Math.floor (Math.random()* 256);
+        event.target.style.background = `rgb(${firstColor}, ${secondColor}, ${thirdColor})`;
     }); 
     container.appendChild(square);
 }
@@ -25,7 +28,10 @@ newGrid.addEventListener("click", () => {
             newSquare.style.width = `${newSquareSize}px`;
             newSquare.style.height = `${newSquareSize}px`;
             newSquare.addEventListener("mouseover", event => {
-                event.target.style.background = "mediumAquamarine";
+                const firstColor = Math.floor (Math.random()* 256);
+                const secondColor = Math.floor (Math.random()* 256);
+                const thirdColor = Math.floor (Math.random()* 256);
+                event.target.style.background = `rgb(${firstColor}, ${secondColor}, ${thirdColor})`;
             });
             container.appendChild(newSquare);
         }
