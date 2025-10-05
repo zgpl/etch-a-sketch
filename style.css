@@ -1,0 +1,49 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: coral;
+}
+
+h1 {
+    color:honeydew;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid brown;
+    margin: 0px;
+    padding: 0px;
+    width: 480px;
+    height: 480px;
+}
+
+.square {
+    background-color: honeydew;
+    box-sizing: border-box;
+    border: 0.5px solid brown;
+    height: 30px;
+    width: 30px;
+}
+
+button {
+    font-family: "Times New Roman", Times, serif;
+    color: honeydew;
+    background-color: brown;
+    border-color: 1px solid transparent;
+    font-size: 20px;
+    margin: 15px;
+    padding: 8px 15px;
+    border-radius: 10px; 
+}
+
+button:hover {
+    border-color: honeydew;
+}
